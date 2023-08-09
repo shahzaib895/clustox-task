@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import TryUseEffect from './components/TryUseEffect';
+import TryUseReducer from './components/TryUseReducer';
+import TryUseRef from './components/TryUseRef';
+import TryUseState from './components/TryUseState';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Use State</h1>
+      <TryUseState></TryUseState>
+      <br/> <br/> <br/> <br/> <br/>
+      <h1>Use Reducer</h1>
+      --------------------------------------------
+      <TryUseReducer></TryUseReducer>
+      <br/> <br/> <br/> <br/>
+      <h1>Use Effect</h1>
+      --------------------------------------------
+      <br/> <br/> <br/> <br/>
+      <h1>Use Ref</h1>
+      <TryUseEffect></TryUseEffect>
+      --------------------------------------------
+      <TryUseRef></TryUseRef>
     </div>
   );
 }
